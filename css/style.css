@@ -9,7 +9,7 @@ Add background image
 - The goal here is a background image on a website that covers the entire browser window at all times.
 */
 body {
-  background: url("../images/background2.WEBP") no-repeat center center fixed;
+  background: url("https://github.com/shivashahrokhi/My-Githubs-Project/blob/master/images/background2.webp") no-repeat center center fixed;
   background-size: cover;
 }
 
