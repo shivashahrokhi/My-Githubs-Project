@@ -1,0 +1,148 @@
+/*
+Box Sizing for all elements
+*/
+* {
+  box-sizing: border-box;
+}
+/*
+Add background image
+- The goal here is a background image on a website that covers the entire browser window at all times.
+*/
+body {
+  background: url("../images/background2.webp") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/*
+This container holds all objects in this page.
+*/
+.flex_container {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+
+  padding: 5px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+A container for holding left elements and make a flex layout for them
+*/
+.flex_item_left {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  opacity: 0.9;
+  border-radius: 10px;
+  width: 75%;
+  height: 100%;
+  margin: 20px;
+}
+
+/*
+A container for holding right elements and make a flex layout for them
+*/
+.flex_item_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  opacity: 0.9;
+  border-radius: 10px;
+  width: 25%;
+  height: 100%;
+}
+
+/*
+Style of info field which will show in right side of left item
+*/
+.info {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+In the left side of right item the image and bio will show and it's their container.
+*/
+.image_bio {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 5%;
+}
+
+/*
+Image style
+*/
+img {
+  border-radius: 50px;
+  width: 100%;
+  height: 50%;
+  margin: 5%;
+}
+
+/*
+Bio div style
+*/
+.bio {
+  width: 100%;
+  margin: 5%;
+  text-align: left;
+}
+
+/*
+Button style
+*/
+button {
+  width: 90%;
+  height: 40%;
+  text-align: center;
+  margin: 5%;
+  background-color:  darkblue;
+  color: white;
+  border-radius: 10px;
+}
+
+/*
+input field style
+*/
+input {
+  width: 90%;
+  height: 40%;
+  text-align: center;
+  margin: 5%;
+  border-radius: 10px;
+}
+
+/*
+Below the submit button there is a div for showing connection info and alerts
+*/
+.connectionInfo {
+  width: 90%;
+  height: 40%;
+  text-align: center;
+  margin: 5%;
+  border-radius: 10px;
+}
